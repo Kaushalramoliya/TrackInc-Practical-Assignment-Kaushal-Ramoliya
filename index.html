@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TrackInc Dashboard</title>
+    <link rel="stylesheet" href="static/styles.css" />
+</head>
+
+<body>
+    <aside class="sidebar" aria-label="Primary">
+        <div class="logo-block" role="banner">
+            <div class="logo-stack">
+                <img src="images/track.png" alt="Track" class="logo-part track" />
+                <img src="images/Inc.png" alt="Inc" class="logo-part inc" />
+                <img src="images/arrow_forward_ios.png" alt="Arrow" class="logo-arrow" />
+            </div>
+        </div>
+
+        <nav class="primary-nav" aria-label="Main navigation">
+            <ul class="nav-list">
+                <li class="nav-item active">
+                    <a href="#dashboard" class="nav-link">
+                        <img src="images/dashboard-on.png" alt="Dashboard icon" class="nav-icon" />
+                        <span class="nav-text">Dashboard</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#invoices" class="nav-link">
+                        <img src="images/invoice-off.png" alt="Invoices icon" class="nav-icon" />
+                        <span class="nav-text">Invoices</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#proposals" class="nav-link">
+                        <img src="images/proposals-off.png" alt="Proposals icon" class="nav-icon" />
+                        <span class="nav-text">Proposals</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#services" class="nav-link">
+                        <img src="images/services-off.png" alt="Services icon" class="nav-icon" />
+                        <span class="nav-text">Services</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#transactions" class="nav-link">
+                        <img src="images/transactions-off.png" alt="Transactions icon" class="nav-icon" />
+                        <span class="nav-text">Transactions</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">
+                        <img src="images/projects-off.png" alt="Projects icon" class="nav-icon" />
+                        <span class="nav-text">Projects</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#customers" class="nav-link">
+                        <img src="images/customers.png" alt="Customers icon" class="nav-icon" />
+                        <span class="nav-text">Customers</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="lower-actions" aria-label="User actions">
+            <ul class="nav-list secondary">
+                <li class="nav-item">
+                    <a href="#settings" class="nav-link">
+                        <img src="images/settings-off.png" alt="Settings icon" class="nav-icon" />
+                        <span class="nav-text">Settings</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#logout" class="nav-link">
+                        <img src="images/logout-off.png" alt="Logout icon" class="nav-icon" />
+                        <span class="nav-text">Log out</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </aside>
+
+    <main class="content" aria-label="Content">
+        <section class="hero" aria-label="Hero Header">
+            <div class="hero-top">
+                <p class="greeting">Hi, Welcome back <span class="accent">Robert!</span></p>
+
+                <div class="top-right" role="group" aria-label="Search and profile">
+                    <div class="search-box" aria-label="Search">
+                        <img src="images/search.png" alt="Search" class="icon-20" />
+                        <span class="search-text">Search...</span>
+                    </div>
+                    <button class="notif" aria-label="Notifications">
+                        <img src="images/notifications.png" alt="Notifications" class="icon-24" />
+                    </button>
+                    <div class="avatar" aria-label="Profile">
+                        <img src="images/human.jpg" alt="User" />
+                    </div>
+                </div>
+            </div>
+            <h2 class="hero-title">Finance Overview</h2>
+            <section class="kpi-cards" aria-label="Key Metrics">
+                <div class="kpi-card sales-card" data-metric="sales">
+                    <div class="kpi-text">
+                        <p class="kpi-value">$ 2,77,120</p>
+                        <p class="kpi-label">Sales</p>
+                    </div>
+                    <img src="images/insights.png" alt="Sales Icon" class="kpi-icon kpi-icon-sales" />
+                </div>
+                <div class="kpi-card expense-card" data-metric="expense">
+                    <div class="kpi-text">
+                        <p class="kpi-value">$ 60,100</p>
+                        <p class="kpi-label">Expense</p>
+                    </div>
+                    <img src="images/Expense.png" alt="Expense Icon" class="kpi-icon kpi-icon-expense" />
+                </div>
+                <div class="kpi-card profit-card" data-metric="profit">
+                    <div class="kpi-text">
+                        <p class="kpi-value">$ 57,230</p>
+                        <p class="kpi-label">Profit</p>
+                    </div>
+                    <img src="images/Profit.png" alt="Profit Icon" class="kpi-icon kpi-icon-profit" />
+                </div>
+                <div class="kpi-card income-card" data-metric="income">
+                    <div class="kpi-text">
+                        <p class="kpi-value">$ 1,60,124</p>
+                        <p class="kpi-label">Income</p>
+                    </div>
+                    <img src="images/income.png" alt="Income Icon" class="kpi-icon kpi-icon-income" />
+                </div>
+            </section>
+        </section>
+
+        <section class="projects" aria-label="Current Projects">
+            <div class="projects-panel">
+                <div class="projects-inner">
+                    <div class="projects-header">
+                        <h3 class="projects-title">Current Projects</h3>
+                        <button class="create-btn" type="button">Create</button>
+                    </div>
+
+                    <div class="projects-table">
+                        <div class="table-head">
+                            <div class="col col-name">Project Name</div>
+                            <div class="col col-customer">Customer</div>
+                            <div class="col col-date">Sent Date</div>
+                            <div class="col col-amount">Amount</div>
+                            <div class="col col-status"></div>
+                        </div>
+
+                        <div class="table-body">
+                            <div class="row">
+                                <div class="col col-name">Travel app design</div>
+                                <div class="col col-customer">Jacob Jones</div>
+                                <div class="col col-date">28 Oct 2022</div>
+                                <div class="col col-amount">$ 240.90</div>
+                                <div class="col col-status"><span class="badge badge-sent">SENT</span></div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col col-name">UX Research for Event management app</div>
+                                <div class="col col-customer">Wade Warren</div>
+                                <div class="col col-date">18 Oct 2022</div>
+                                <div class="col col-amount">$ 120.00</div>
+                                <div class="col col-status"><span class="badge badge-draft">DRAFT</span></div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col col-name">Redesign - Food delivery app</div>
+                                <div class="col col-customer">Annette Black</div>
+                                <div class="col col-date">15 Oct 2022</div>
+                                <div class="col col-amount">$ 351.00</div>
+                                <div class="col col-status"><span class="badge badge-paid">PAID</span></div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col col-name">Web App - Online Learning</div>
+                                <div class="col col-customer">Cameron Williamson</div>
+                                <div class="col col-date">15 Oct 2022</div>
+                                <div class="col col-amount">$ 240.90</div>
+                                <div class="col col-status"><span class="badge badge-paid">PAID</span></div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col col-name">Railway web casestudy</div>
+                                <div class="col col-customer">Robert Fox</div>
+                                <div class="col col-date">13 Oct 2022</div>
+                                <div class="col col-amount">$ 153.00</div>
+                                <div class="col col-status"><span class="badge badge-sent">SENT</span></div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col col-name">Responsive web design</div>
+                                <div class="col col-customer">Floyd Miles</div>
+                                <div class="col col-date">06 Oct 2022</div>
+                                <div class="col col-amount">$ 140.90</div>
+                                <div class="col col-status"><span class="badge badge-rejected">REJECTED</span></div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col col-name">Music app design</div>
+                                <div class="col col-customer">Theresa Webb</div>
+                                <div class="col col-date">04 Oct 2022</div>
+                                <div class="col col-amount">$ 345.90</div>
+                                <div class="col col-status"><span class="badge badge-draft">DRAFT</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="events" aria-label="Events">
+            <div class="events-panel">
+                <h3 class="events-title">Events</h3>
+                <div class="events-content" role="list">
+                    <div class="event-item" role="listitem">
+                        <div class="event-row">
+                            <div class="event-left">
+                                <img class="event-avatar" src="images/events human 1.png" alt="Wade Warren" />
+                                <div class="event-text">
+                                    <div class="event-name">Wade Warren</div>
+                                    <div class="event-sub">🎂 Birthday • Today</div>
+                                </div>
+                            </div>
+                            <span class="chip-btn">Wish</span>
+                        </div>
+                    </div>
+                    <div class="react-angle" aria-hidden="true"></div>
+                    <div class="event-item" role="listitem">
+                        <div class="event-row">
+                            <div class="event-left">
+                                <img class="event-avatar" src="images/events human 2.png" alt="Wade Warren" />
+                                <div class="event-text">
+                                    <div class="event-name">Wade Warren</div>
+                                    <div class="event-sub">🎉 Joining Us • Today</div>
+                                </div>
+                            </div>
+                            <span class="chip-btn">Congratulations</span>
+                        </div>
+                    </div>
+
+                    <div class="event-item" role="listitem">
+                        <div class="event-row">
+                            <div class="event-left">
+                                <img class="event-avatar" src="images/events human 3.png" alt="Wade Warren" />
+                                <div class="event-text">
+                                    <div class="event-name">Wade Warren</div>
+                                    <div class="event-sub">💼 Work Anniversary • 7 September, 2022</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="event-item" role="listitem">
+                        <div class="event-row">
+                            <div class="event-left">
+                                <img class="event-avatar" src="images/events human 4.png" alt="Wade Warren" />
+                                <div class="event-text">
+                                    <div class="event-name">Wade Warren</div>
+                                    <div class="event-sub">💼 Work Anniversary • 7 September, 2022</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+</body>
+
+</html>
